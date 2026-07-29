@@ -13,7 +13,7 @@ This example uses a bounding box above germany with latitudinal coordinates from
 
 ## Example 2 - plotting a map with flight tracks
 
-This example uses a bounding box above italy. To plot flight tracks the positions of the aircrafts need to be tracked over time. The method `get_data` has two additional parameters `number_of_rescans` and `delay_between_rescans`. For the tracks above a country with a size of italy its sufficient to rescan the positions once a minute. The plot then interpolates these positions with line segments. The number of rescans can then be selected for the required length of a track. If you want to create tracks that represent exactly one hour then you could use `number_of_rescans = 60` and `delay_between_rescans = 60`.
+This example uses a bounding box above italy. To plot flight tracks the positions of the aircrafts need to be tracked over time. The method `get_data` has two additional parameters `number_of_rescans` and `delay_between_rescans`. For the tracks above a country with a size of italy its sufficient to rescan the positions once a minute. The plot then interpolates these positions with line segments. The number of rescans can then be selected for the required length of a track. If you want to create tracks that represent exactly one hour then you could use `number_of_rescans = 60` and `delay_between_rescans = 60`. For smaller boxes increase `delay_between_rescans = 100`.
 
 ![](example_2_tracks.png)
 
