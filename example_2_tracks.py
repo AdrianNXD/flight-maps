@@ -5,7 +5,6 @@
 
 from get_flight_data import get_data
 
-import geopandas as gpd
 import matplotlib.pyplot as plt
 import contextily as ctx
 from pyproj import Transformer
