@@ -63,6 +63,10 @@ def get_data(latitude_min:float,
         timestamp = data["time"]
         states = data["states"]
 
+        if not states:  # if no data found, write a error message
+            print(f"no data at time={timestamp}.")
+            continue
+      
         # append every flight to the dataframe
         for state in states:
             row = [timestamp] + state
